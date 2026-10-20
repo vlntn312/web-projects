@@ -52,6 +52,13 @@ input {
 }
 
 @media (max-width: 768px) {
+
+    .back button {
+        position: static; 
+        margin-bottom: 15px; /* Abstand zur Überschrift darunter */
+        padding: 10px 16px;
+    }
+    
     .back .button-desktop {
     display: none;
     left: 10px;
