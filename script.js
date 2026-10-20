@@ -8,6 +8,7 @@ function generate_number() {
     number = Math.round(Math.random() * 100)
 }
 
+generate_number();
 
 function guess_number() {
     if (won) {
@@ -26,7 +27,7 @@ function guess_number() {
         status_display.innerHTML = "Die Zahl ist höher!";
     } else if (guess.value > number) {
         status_display.innerHTML = "Die Zahl ist niedriger!";
-    } else {
+    } else if (guess.value == number) {
         status_display.innerHTML = "Du hast gewonnen!";
         const jsConfetti = new JSConfetti()
         jsConfetti.addConfetti()
