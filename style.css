@@ -23,6 +23,7 @@ button {
     padding: 12px;
     margin: 4px 2px;
     font-size: 16px;
+    font-family: monospace;
     cursor: pointer;
 }
 
