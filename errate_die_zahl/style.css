@@ -46,3 +46,16 @@ input {
     background: #463535;
     border-color: #463535;
 }
+
+.back .button-phone {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .back .button-desktop {
+    display: none; /* Text auf dem Handy unsichtbar machen */
+  }
+    .back .button-phone {
+    display: inline-block; /* Icon auf dem Handy anzeigen */
+  }
+}
