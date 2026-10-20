@@ -15,26 +15,21 @@ body {
     padding: 20px;
 }
 
+div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 button {
     background: #414141;
     color: #fff;
     border-radius: 10px;
     font-weight: bold;
-    padding: 12px;
-    margin: 4px 2px;
+    padding: 10px, 10px;
     font-size: 16px;
     font-family: monospace;
     cursor: pointer;
-}
-
-input {
-    background: #414141;
-    color: #fff;
-    border-radius: 10px;
-    font-weight: bold;
-    padding: 12px;
-    margin: 4px 2px;
-    font-size: 16px;
-    font-family: monospace;
-    cursor: pointer;
+    height: 100px;
+    width: 100px;
 }
