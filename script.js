@@ -1,5 +1,6 @@
 let number;
 let tries = 0;
+let won = false;
 const input = document.getElementById("guess");
 
 
@@ -9,10 +10,14 @@ function generate_number() {
 
 
 function guess_number() {
-    if (tries == 0) {
+    if (won) {
         guess_button.innerHTML = "Raten";
+        tries_display.innerHTML = "Versuche: " + tries;
+        status_display.innerHTML = "Bitte gib eine Zahl zwischen 0 und 100 ein!"
         generate_number();
         input.required = true;
+        won = false;
+        return;
     }
     tries ++;
     tries_display.innerHTML = "Versuche: " + tries;
@@ -28,6 +33,7 @@ function guess_number() {
         tries = 0;
         guess_button.innerHTML = "Neue Runde"
         input.required = false;
+        won = true;
     }
     guess.value = "";
 }
