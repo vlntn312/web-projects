@@ -54,9 +54,9 @@ input {
 @media (max-width: 768px) {
     .back .button-desktop {
     display: none;
+    left: 10px;
   }
     .back .button-phone {
     display: inline-block;
-    left: 10px;
   }
 }
