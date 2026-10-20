@@ -1,0 +1,48 @@
+html, body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: #111;
+    color: #eee;
+    font-family: monospace;
+    padding: 20px;
+}
+
+button {
+    background: #414141;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 12px;
+    margin: 4px 2px;
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+input {
+    background: #414141;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 12px;
+    margin: 4px 2px;
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.back button {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    background: #463535;
+    border-color: #463535;
+}
