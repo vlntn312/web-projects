@@ -1,0 +1,29 @@
+
+body {
+    background: #111;
+    color: #eee;
+    font-family: monospace;
+    padding: 20px;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+}
+
+pre {
+    background: #202020;
+    padding: 16px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    min-height: 180px;
+    line-height: 1.6;
+}
+
+button {
+    padding: 12px;
+    margin: 4px 2px;
+    font-size: 16px;
+    cursor: pointer;
+}
