@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial- scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../index.html" class="back">
+        <button>
+            <span class="button-desktop">zurück</span>
+            <span class="button-phone">zurück</span>
+        </button>
+    </a>
+    <header><h1>Blackjack</h1></header>
+    <div class="game">
+        <h2 id="player_points_display" class="gametext">Spieler: </h2>
+        <h2 id="dealer_points_display" class="gametext">Dealer: </h2>
+        <h1></h1>
+        <h1></h1>
+        <h2 id="status_display" class="gametext">Wähle deine Aktion!</h2>
+    </div>
+    <div id="game_div" class="container">
+        <button id="take_card_button" onclick="hit()">Karte ziehen</button>
+        <button id="stand_button" onclick="stand()">Aufhören</button>
+        <button onclick="restart()">neue Runde</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+</body>
+</html>
