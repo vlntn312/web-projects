@@ -19,9 +19,13 @@ dealer_points_display.innerHTML = "Dealer: ?"
 function check_points(player_points, dealer_points) {
     if (player_points > 21) {
         status_display.innerHTML = "Du hast verloren, da du über 21 Punkte hast!";
+        take_card_button.disabled = true;
+        stand_button.disabled = true;
     }
     if (dealer_points > 21) {
         status_display.innerHTML = "Der Dealer hat verloren, da er über 21 Punkte hat!";
+        take_card_button.disabled = true;
+        stand_button.disabled = true;
     }
 }
 
@@ -36,6 +40,8 @@ function calc_result(player_points, dealer_points) {
         status_display.innerHTML = "unentschieden!"
     }
     check_points(player_points, dealer_points)
+    take_card_button.disabled = true;
+    stand_button.disabled = true;
 }
 
 function hit() {
@@ -60,5 +66,7 @@ function restart() {
     player_points_display.innerHTML = "Spieler: " + player_points;
     dealer_points_display.innerHTML = "Dealer: ?";
     status_display.innerHTML = "Wähle deine Aktion!"
+    take_card_button.disabled = false;
+        stand_button.disabled = false;
 }
 
